@@ -15,7 +15,7 @@ A full-featured shopping website built with Django, featuring product listing, s
 
 - **Backend:** Django (Python)
 - **Frontend:** HTML, CSS, JavaScript, Bootstrap
-- **Database:** SQLite (default) / MySQL (optional)
+- **Database:** MySQL
 - **Authentication:** Django built-in auth system
 
 ## Getting Started
@@ -31,5 +31,4 @@ A full-featured shopping website built with Django, featuring product listing, s
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/shopping-django.git
-cd shopping-django
+git clone 
