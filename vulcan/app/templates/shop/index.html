@@ -1,0 +1,32 @@
+
+{% extends "shop/layout/main.html" %}
+
+{% block content %}
+{% include "shop/include/slider.html" %}
+    <div class="container" style="margin-top:70px;">
+        <div class="row">
+            <div class="col-12"><h1 class="text-center my-5" >LATEST PRODUCTS</h1></div>
+        </div>
+        <div class="row">
+        {% for item in products %}
+                <div class="col-md-4 col-lg-3 col-12">
+                    <div class="card my-3">
+                        <img src="{{item.product_images.url}}" class="card-image-top" height="200px;" alt="Categories">
+                        
+                        <a href="{% url 'product_details' 'item.category.name' item.name %}">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary"><center>{{item.name}}</center></h5>
+                                <p class="card-text">
+                                    <span class="float-start old_price"><s>Rs.{{item.old_price| stringformat:'d'}}</s></span>
+                                    <span class="float-end new_price">Rs.{{item.price| stringformat:'d'}}</span>
+                                </p>
+                 
+                            </div>
+                        </a>
+                    </div>
+            
+                </div>
+        {% endfor %}
+            </div>
+    </div>
+{% endblock %}

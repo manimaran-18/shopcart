@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    font-size: 16px;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+    background: #1f242d;
+    color: rgb(15, 15, 15);
+}
+a{
+    text-decoration: none;
+}
+.carousel-item img {
+    object-fit: cover;
+    object-position: top;
+    height: 80vh;
+    overflow: hidden;
+}
+.old_price{
+    font-weight: bolder;
+    background-color: red;
+    padding: 1px;
+    border-radius: 4px;
+
+
+}
+.new_price{
+    font-weight: bolder;
+    background-color: green;
+    color: white;
+    padding: 1px;
+    border-radius: 4px;
+
+}
+.pic_box{
+    position: relative;
+}
+.hot{
+    background-color:red;
+    color: aqua;
+    width: 5px;
+    text-align: center;
+    font-weight: bold;
+    display: inline;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 10;
+
+}
+.card{
+    padding-bottom: 11px;
+    border-style: groove;
+    box-shadow: 5px 5px 15px black,
+                inset 4px 4px 11px white ;
+    border-radius: 21px;
+    overflow: hidden;
+    transition: .3s;
+    background:rgb(8, 19, 19);
+    border-width: 2px;
+    border-color: aqua;
+
+}
+.card:hover{
+    transform: scale(1.1);
+    border-color: rgb(66, 5, 180);
+    border-width: 2px;
+
+}
+.card a{
+    color: rgb(11, 12, 12);
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/bg11.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+section{
+
+   
+    padding: 5rem;
+    justify-content: center;
+}
+section:hover{
+    padding: 5rem;
+    justify-content: center;
+   
+}
+.home .content{
+
+    max-width: 60rem;
+    justify-content: center;
+    text-align: center;
+}
+.home .content h3{
+    font-size: 4rem;
+   
+    text-transform: uppercase;
+    color: rgb(203, 231, 231);
+    animation: blink 2s infinite;
+}
+.home .content p{
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: rgb(252, 253, 253);
+}
+.home .content .btn{
+    padding-left:33px;
+    color: #000;
+    border-width: 2px;
+    background-color: rgb(243, 164, 67);
+    box-sizing: border-box;
+    padding-right: 24px;
+  
+
+}
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
+}
+
+

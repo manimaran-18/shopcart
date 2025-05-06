@@ -1,0 +1,44 @@
+
+{% extends "shop/layout/main.html" %}
+{% block content %}
+<section class="py-5 text-center container" style="margin-top:70px;">
+    <div class="row py-lg-8">
+        <div class="col-lg-8 col-md-8 nx-auto">
+            <h1 class="fw-light">BESTSELLERS</h1>
+            <p class="load text-muted">OUR MOST POPULAR PRODUCTS</p>
+            <p>
+                <a herf="#" class="btn btn-primary my-2">Already user</a>
+                <a herf="#" class="btn btn-secondary my-2">Register</a>
+            </p>
+        </div>
+    </div>
+
+</section>
+<section class="bg-light py-4 ny-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="mb-3">Categories</h4>
+                <hr style="border-color:#b8bfc2;">
+                {% include "shop/include/message.html" %}
+            </div>
+            {% for item in category %}
+                <div class="col-md-4 col-lg-3">
+                    <div class="card my-3">
+                        <img src="{{item.images.url}}" class="card-image-top" height="200px;" alt="Categories">
+                        <hr style="border-color:#b8bfc2;">
+                        <a href="{% url 'collections' item.name %}">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">{{item.name}}</h5>
+                                <p class="card-text">{{item.description}}</p>
+                            </div>
+                        </a>
+                    </div>
+            
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}
